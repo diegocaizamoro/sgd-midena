@@ -1,4 +1,6 @@
 from django.contrib import admin
+from unfold.admin import ModelAdmin, TabularInline
+
 
 # Register your models here.
 from .models import (
@@ -10,24 +12,24 @@ from .models import (
 
 
 @admin.register(DocumentType)
-class DocumentTypeAdmin(admin.ModelAdmin):
+class DocumentTypeAdmin(ModelAdmin):
     list_display = ("name", "description")
     search_fields = ("name",)
 
 
-class DocumentMetadataInline(admin.TabularInline):
+class DocumentMetadataInline(TabularInline):
     model = DocumentMetadata
     extra = 1
 
 
-class DocumentVersionInline(admin.TabularInline):
+class DocumentVersionInline(TabularInline):
     model = DocumentVersion
     extra = 0
     readonly_fields = ("created_at",)
 
 
 @admin.register(Document)
-class DocumentAdmin(admin.ModelAdmin):
+class DocumentAdmin(ModelAdmin):
     list_display = (
         "title",
         "document_type",
