@@ -39,7 +39,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'gstConocimiento',
     'instrCooperacion',
     'sgdDocumentos',
     'sgdCatalogo',
@@ -56,6 +55,60 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'sgdSource.urls'
+
+"""UNFOLD = {
+    "SITE_SUBHEADER": "Administración",
+    "SIDEBAR": {
+        "navigation": [
+            {
+                "title": "Gestión Documental",
+                "icon": "admin_panel_settings",
+                "collapsible": True,
+                "items": [
+                    {
+                        "title": "Gestión del Conocimiento",
+                        "link": "/admin/gstConocimiento/",
+                        "permissions": ["gstConocimiento.view_gstconocimiento"],
+                    },
+                    {
+                        "title": "Instrumentos de Cooperación",
+                        "link": "/admin/instrCooperacion/",
+                        "permissions": ["instrCooperacion.view_instrcooperacion"],
+                    },
+                ],
+            },
+            {
+                "title": "Administración",
+                "icon": "admin_panel_settings",
+                "collapsible": True,
+                "items": [
+                    {
+                        "title": "Usuarios",
+                        "link": "/admin/auth/user/",
+                        "permissions": ["auth.view_user"],
+                    },
+                    {
+                        "title": "Grupos",
+                        "link": "/admin/auth/group/",
+                        "permissions": ["auth.view_group"],
+                    },
+                ],
+            },
+            {
+                "title": "Configuración",
+                "icon": "psychology",
+                "collapsible": True,
+                "items": [
+                    {
+                        "title": "Tipos documentales",
+                        "link": "/admin/sgdCatalogo/knowledgedocumenttype/",
+                        "permissions": ["sgdCatalogo.view_knowledgedocumenttype"],
+                    },
+                ],
+            }
+        ],
+    },
+}"""
 
 TEMPLATES = [
     {
@@ -81,7 +134,7 @@ WSGI_APPLICATION = 'sgdSource.wsgi.application'
 DATABASES = {
      'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'sgd-bdd',
+        'NAME': 'sgd-test-midena',
         'USER': 'postgres',
         'PASSWORD': 'diego',
         'HOST': 'localhost',

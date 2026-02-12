@@ -62,3 +62,34 @@ class Expert(models.Model):
         return self.full_name
 
 
+class RedesInvestigacion(models.Model):
+    name = models.CharField(max_length=150)
+
+    class Meta:
+        verbose_name = "Red de Investigación"
+        verbose_name_plural = "Redes de Investigación"
+
+    def __str__(self):
+        return self.name
+
+
+class AplicacionPotencial(models.Model):
+    name = models.CharField(max_length=150)
+
+    class Meta:
+        verbose_name = "Aplicación Potencial"
+        verbose_name_plural = "Aplicaciones Potenciales"
+
+    def __str__(self):
+        return self.name
+
+
+class Referencia(models.Model):
+    name = models.CharField(max_length=100)
+
+    class Meta:
+        verbose_name = "Referencia"
+        verbose_name_plural = "Referencias"
+
+    def __str__(self):
+        return self.name
