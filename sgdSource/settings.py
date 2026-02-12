@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'instrCooperacion',
     'sgdDocumentos',
     'sgdCatalogo',
+    'sgdConocimiento',
 ]
 
 MIDDLEWARE = [
