@@ -57,7 +57,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'sgdSource.urls'
 
-"""UNFOLD = {
+UNFOLD = {
     "SITE_SUBHEADER": "Administración",
     "SIDEBAR": {
         "navigation": [
@@ -68,8 +68,8 @@ ROOT_URLCONF = 'sgdSource.urls'
                 "items": [
                     {
                         "title": "Gestión del Conocimiento",
-                        "link": "/admin/gstConocimiento/",
-                        "permissions": ["gstConocimiento.view_gstconocimiento"],
+                        "link": "/admin/sgdConocimiento/",
+                        "permissions": ["sgdConocimiento.view_sgdconocimiento"],
                     },
                     {
                         "title": "Instrumentos de Cooperación",
@@ -105,11 +105,16 @@ ROOT_URLCONF = 'sgdSource.urls'
                         "link": "/admin/sgdCatalogo/knowledgedocumenttype/",
                         "permissions": ["sgdCatalogo.view_knowledgedocumenttype"],
                     },
+                     {
+                        "title": "Aplicaciones potenciales",
+                        "link": "/admin/sgdCatalogo/aplicacionpotencial/",
+                        "permissions": ["sgdCatalogo.view_potentialapplication"],
+                    },
                 ],
             }
         ],
     },
-}"""
+}
 
 TEMPLATES = [
     {
