@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<shapes model-version="4.8.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="schemas/6.22.2/exercise/drawings.xsd">
+  <layer name="Marcadores del ejercicio" uuid="b65cb171-9f6a-4781-9c48-cfe440b865b9">
+    <write-profiles>
+      <profile name="admin"/>
+    </write-profiles>
+  </layer>
+  <layer name="Límites" uuid="e58cb612-8afa-4332-a94f-1a14cfe8740e">
+    <write-profiles>
+      <profile name="admin"/>
+    </write-profiles>
+  </layer>
+  <layer name="Líneas" uuid="e52e6c2f-ae09-48ef-a6c5-029c7780d5bc">
+    <write-profiles>
+      <profile name="admin"/>
+    </write-profiles>
+    <shape category="Shapes" color="#010101" name="PLR 160500DIC28" template="Line" type="line" uuid="30ae95ca-95c4-4bc2-b65c-f5b05a984a08">
+      <point latitude="-1.021226" longitude="-79.302713"/>
+      <point latitude="-1.021982" longitude="-79.304669"/>
+      <point latitude="-1.022826" longitude="-79.304714"/>
+      <point latitude="-1.024872" longitude="-79.304536"/>
+      <point latitude="-1.026606" longitude="-79.304492"/>
+      <point latitude="-1.026873" longitude="-79.305292"/>
+      <point latitude="-1.028118" longitude="-79.306893"/>
+      <point latitude="-1.029230" longitude="-79.307116"/>
+      <point latitude="-1.030386" longitude="-79.307872"/>
+      <point latitude="-1.031098" longitude="-79.308628"/>
+      <point latitude="-1.032387" longitude="-79.309206"/>
+      <point latitude="-1.033454" longitude="-79.309829"/>
+      <point latitude="-1.034344" longitude="-79.311652"/>
+      <point latitude="-1.036211" longitude="-79.311830"/>
+      <point latitude="-1.037012" longitude="-79.311830"/>
+      <point latitude="-1.038524" longitude="-79.312364"/>
+      <point latitude="-1.040614" longitude="-79.312586"/>
+      <point latitude="-1.042348" longitude="-79.312986"/>
+      <point latitude="-1.044616" longitude="-79.313876"/>
+      <point latitude="-1.046350" longitude="-79.313387"/>
+      <point latitude="-1.048574" longitude="-79.313253"/>
+      <point latitude="-1.050263" longitude="-79.311119"/>
+      <point latitude="-1.051509" longitude="-79.309473"/>
+      <point latitude="-1.052887" longitude="-79.308806"/>
+      <point latitude="-1.054355" longitude="-79.308628"/>
+      <point latitude="-1.055422" longitude="-79.308672"/>
+      <point latitude="-1.056667" longitude="-79.308984"/>
+      <point latitude="-1.057779" longitude="-79.309784"/>
+      <point latitude="-1.058712" longitude="-79.309695"/>
+      <point latitude="-1.060402" longitude="-79.309562"/>
+      <point latitude="-1.061870" longitude="-79.309206"/>
+      <point latitude="-1.062981" longitude="-79.309651"/>
+      <point latitude="-1.063915" longitude="-79.310318"/>
+      <point latitude="-1.065383" longitude="-79.311119"/>
+      <point latitude="-1.066450" longitude="-79.314321"/>
+      <point latitude="-1.068184" longitude="-79.314721"/>
+      <point latitude="-1.070808" longitude="-79.314232"/>
+      <point latitude="-1.071831" longitude="-79.315344"/>
+      <point latitude="-1.073031" longitude="-79.317968"/>
+      <point latitude="-1.074098" longitude="-79.318235"/>
+      <point latitude="-1.074765" longitude="-79.317879"/>
+      <point latitude="-1.075521" longitude="-79.317523"/>
+      <point latitude="-1.076322" longitude="-79.317523"/>
+      <point latitude="-1.076989" longitude="-79.318724"/>
+      <point latitude="-1.078145" longitude="-79.319836"/>
+      <point latitude="-1.080102" longitude="-79.320681"/>
+      <point latitude="-1.081436" longitude="-79.320992"/>
+      <point latitude="-1.082592" longitude="-79.321081"/>
+      <point latitude="-1.083615" longitude="-79.320548"/>
+      <point latitude="-1.084682" longitude="-79.320103"/>
+      <point latitude="-1.085927" longitude="-79.319747"/>
+      <point latitude="-1.087395" longitude="-79.319525"/>
+      <point latitude="-1.089396" longitude="-79.321304"/>
+      <point latitude="-1.090819" longitude="-79.322016"/>
+      <point latitude="-1.092775" longitude="-79.322772"/>
+      <point latitude="-1.094554" longitude="-79.322683"/>
+      <point latitude="-1.095265" longitude="-79.322149"/>
+    </shape>
+  </layer>
+  <layer name="Puntos Coordinacion" uuid="3adabf81-b100-4420-bb13-3cd0f154f5ce">
+    <write-profiles>
+      <profile name="admin"/>
+    </write-profiles>
+    <shape category="Markers" color="#010101" name="" template="Coordinating point" type="point" uuid="bec116e3-5311-4ac8-88d1-dd85537c8cc2">
+      <point latitude="-1.023526" longitude="-79.286933"/>
+    </shape>
+    <shape category="Markers" color="#010101" name="" template="Coordinating point" type="point" uuid="739ae6da-7efd-41fd-b0ca-2e76d40f6215">
+      <point latitude="-1.025277" longitude="-79.304443"/>
+    </shape>
+    <shape category="Markers" color="#010101" name="" template="Coordinating point" type="point" uuid="94aa0e60-1adb-493b-9442-417d2c32dffa">
+      <point latitude="-1.044466" longitude="-79.313850"/>
+    </shape>
+    <shape category="Markers" color="#010101" name="" template="Coordinating point" type="point" uuid="153b8d64-1aa6-40fb-93ad-92f3cf34124b">
+      <point latitude="-1.066125" longitude="-79.313262"/>
+    </shape>
+    <shape category="Markers" color="#010101" name="" template="Coordinating point" type="point" uuid="49b9b9d7-da20-4d17-bda1-3a19cc7d4b2c">
+      <point latitude="-1.088416" longitude="-79.293409"/>
+    </shape>
+    <shape category="Markers" color="#010101" name="" template="Coordinating point" type="point" uuid="8949741b-eb6d-475b-8b48-9834d784181b">
+      <point latitude="-1.088747" longitude="-79.321141"/>
+    </shape>
+  </layer>
+  <layer bookmark="true" name="Marcadores de admin" uuid="eb9c3e9f-0046-433f-8f4c-c370697e2bf1">
+    <read-profiles>
+      <profile name="admin"/>
+    </read-profiles>
+    <write-profiles>
+      <profile name="admin"/>
+    </write-profiles>
+  </layer>
+  <layer name="Nueva capa" uuid="3448985d-2047-4469-bd1f-f0917642acef">
+    <read-profiles>
+      <profile name="admin"/>
+    </read-profiles>
+    <write-profiles>
+      <profile name="admin"/>
+    </write-profiles>
+    <shape category="Shapes" color="#010101" creator="admin" name="90km" template="Line" type="line" uuid="8ab2f04f-186b-4a34-82b6-16bd0c44c72e">
+      <point latitude="-1.033282" longitude="-79.385954"/>
+      <point latitude="-1.036045" longitude="-79.377354"/>
+      <point latitude="-1.033282" longitude="-79.365991"/>
+      <point latitude="-1.041266" longitude="-79.357699"/>
+      <point latitude="-1.055699" longitude="-79.358620"/>
+      <point latitude="-1.058463" longitude="-79.328522"/>
+      <point latitude="-1.055699" longitude="-79.320844"/>
+      <point latitude="-1.039117" longitude="-79.322072"/>
+      <point latitude="-1.026527" longitude="-79.325143"/>
+      <point latitude="-1.008717" longitude="-79.322686"/>
+      <point latitude="-0.984151" longitude="-79.319308"/>
+      <point latitude="-0.984765" longitude="-79.301802"/>
+      <point latitude="-0.982002" longitude="-79.281839"/>
+      <point latitude="-0.989678" longitude="-79.267405"/>
+      <point latitude="-0.988143" longitude="-79.240071"/>
+      <point latitude="-0.985071" longitude="-79.214580"/>
+      <point latitude="-0.976780" longitude="-79.190625"/>
+      <point latitude="-0.984763" longitude="-79.179262"/>
+      <point latitude="-0.998889" longitude="-79.189396"/>
+      <point latitude="-1.002881" longitude="-79.199224"/>
+      <point latitude="-1.021920" longitude="-79.208130"/>
+      <point latitude="-1.040652" longitude="-79.235770"/>
+      <point latitude="-1.056313" longitude="-79.239763"/>
+      <point latitude="-1.068903" longitude="-79.268632"/>
+      <point latitude="-1.075659" longitude="-79.294124"/>
+      <point latitude="-1.085485" longitude="-79.287060"/>
+      <point latitude="-1.107287" longitude="-79.265561"/>
+      <point latitude="-1.130625" longitude="-79.265561"/>
+      <point latitude="-1.143215" longitude="-79.269246"/>
+      <point latitude="-1.157954" longitude="-79.256653"/>
+      <point latitude="-1.155805" longitude="-79.273239"/>
+      <point latitude="-1.157033" longitude="-79.306409"/>
+      <point latitude="-1.139530" longitude="-79.318695"/>
+      <point latitude="-1.133081" longitude="-79.333437"/>
+      <point latitude="-1.128782" longitude="-79.350329"/>
+      <point latitude="-1.123562" longitude="-79.363229"/>
+      <point latitude="-1.106980" longitude="-79.365685"/>
+      <point latitude="-1.104830" longitude="-79.381349"/>
+      <point latitude="-1.084563" longitude="-79.391791"/>
+      <point latitude="-1.073508" longitude="-79.391790"/>
+      <point latitude="-1.060918" longitude="-79.388719"/>
+      <point latitude="-1.047100" longitude="-79.394861"/>
+      <point latitude="-1.047100" longitude="-79.394861"/>
+      <point latitude="-1.051398" longitude="-79.412060"/>
+      <point latitude="-1.029288" longitude="-79.420045"/>
+      <point latitude="-1.014549" longitude="-79.420658"/>
+    </shape>
+  </layer>
+</shapes>
