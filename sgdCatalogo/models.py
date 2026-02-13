@@ -94,7 +94,7 @@ class Referencia(models.Model):
     def __str__(self):
         return self.name
     
-class NivelSeguridad(models.Model):
+class NivelSeguridad(models.Model):  #cambio de diego
     name = models.CharField(max_length=100)
 
     class Meta:
