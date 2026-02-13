@@ -79,9 +79,9 @@ UNFOLD = {
         },
         {
             "title": "Instrumentos de Cooperación",
-            "link": "/admin/instrCooperacion/instrcooperacion/",
+            "link": "/admin/instrCooperacion/instrumentocooperacion/",
             "permission": lambda request: request.user.has_perm(
-                "instrCooperacion.view_instrcooperacion"
+                "instrCooperacion.view_instrumentocooperacion"
             ),
         },
     ],
@@ -167,7 +167,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'sgd-test-midena',
         'USER': 'postgres',
-        'PASSWORD': 'admin',
+        'PASSWORD': 'diego',
         'HOST': 'localhost',
         'PORT': '5432',
     }

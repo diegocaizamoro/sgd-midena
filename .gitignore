@@ -1,0 +1,5 @@
+# Ignorar todas las migraciones de todas las apps
+**/migrations/*
+
+# EXCEPTO los archivos __init__.py (necesarios para Django)
+!**/migrations/__init__.py
