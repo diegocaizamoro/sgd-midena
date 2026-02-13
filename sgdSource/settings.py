@@ -57,41 +57,57 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'sgdSource.urls'
 
-"""UNFOLD = {
+UNFOLD = {
     "SITE_SUBHEADER": "Administración",
     "SIDEBAR": {
         "navigation": [
             {
-                "title": "Gestión Documental",
-                "icon": "admin_panel_settings",
-                "collapsible": True,
-                "items": [
-                    {
-                        "title": "Gestión del Conocimiento",
-                        "link": "/admin/gstConocimiento/",
-                        "permissions": ["gstConocimiento.view_gstconocimiento"],
-                    },
-                    {
-                        "title": "Instrumentos de Cooperación",
-                        "link": "/admin/instrCooperacion/",
-                        "permissions": ["instrCooperacion.view_instrcooperacion"],
-                    },
-                ],
+                 "title": "Gestión Documental",
+    "icon": "admin_panel_settings",
+    "collapsible": True,
+    "permission": lambda request: (
+        request.user.has_perm("sgdConocimiento.view_sgdconocimiento")
+        or request.user.has_perm("instrCooperacion.view_instrcooperacion")
+    ),
+    "items": [
+        {
+            "title": "Gestión del Conocimiento",
+            "link": "/admin/sgdConocimiento/sgdconocimiento/",
+            "permission": lambda request: request.user.has_perm(
+                "sgdConocimiento.view_sgdconocimiento"
+            ),
+        },
+        {
+            "title": "Instrumentos de Cooperación",
+            "link": "/admin/instrCooperacion/instrcooperacion/",
+            "permission": lambda request: request.user.has_perm(
+                "instrCooperacion.view_instrcooperacion"
+            ),
+        },
+    ],
             },
             {
                 "title": "Administración",
                 "icon": "admin_panel_settings",
                 "collapsible": True,
+                "permission": lambda request: (
+        request.user.has_perm("auth.view_user")
+        or request.user.has_perm("auth.view_group")
+    ),
                 "items": [
                     {
                         "title": "Usuarios",
                         "link": "/admin/auth/user/",
-                        "permissions": ["auth.view_user"],
+                        "permission": lambda request: request.user.has_perm(
+                "auth.view_user"
+            ),
                     },
                     {
                         "title": "Grupos",
                         "link": "/admin/auth/group/",
-                        "permissions": ["auth.view_group"],
+                        "permission": lambda request: request.user.has_perm(
+                "auth.view_group"
+            ),
                     },
                 ],
             },
@@ -99,17 +115,31 @@ ROOT_URLCONF = 'sgdSource.urls'
                 "title": "Configuración",
                 "icon": "psychology",
                 "collapsible": True,
+                  "permission": lambda request: (
+        request.user.has_perm("sgdCatalogo.view_knowledgedocumenttype")
+        or request.user.has_perm("sgdCatalogo.view_potentialapplication")
+    ),
                 "items": [
                     {
                         "title": "Tipos documentales",
                         "link": "/admin/sgdCatalogo/knowledgedocumenttype/",
-                        "permissions": ["sgdCatalogo.view_knowledgedocumenttype"],
+                        "permission": lambda request: request.user.has_perm(
+                            "sgdCatalogo.view_knowledgedocumenttype"
+                        ),
                     },
+                     {
+                        "title": "Aplicaciones potenciales",
+                        "link": "/admin/sgdCatalogo/aplicacionpotencial/",
+                        "permission": lambda request: request.user.has_perm(
+                            "sgdCatalogo.view_aplicacionpotencial"
+                        ),
+                    },
+                    
                 ],
             }
         ],
     },
-}"""
+}
 
 TEMPLATES = [
     {
