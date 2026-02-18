@@ -1,19 +1,23 @@
-/*#nav-sidebar-inner {
+#nav-sidebar-inner {
     background: #263544 !important;
 }
 
 
-@layer utilities {
-  @media not print {
-    .dark\:text-font-important-dark:where(.dark, .dark *) {
-      color: rgb(227, 230, 236);
-    }
-  }
+thead {
+    background-color: #1e293b !important;
 }
 
+thead th {
+    color: white !important;
+    font-weight: 600 !important;
+}
 
-@layer utilities {
-  .text-font-important-light {
-    color: rgb(227, 230, 236);
-  }
-}*/
+table {
+    border-collapse: collapse !important;
+}
+
+table th,
+table td {
+    border: 1px solid #d1d5db !important;
+}
+

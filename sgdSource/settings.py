@@ -67,6 +67,8 @@ ROOT_URLCONF = 'sgdSource.urls'
 
 UNFOLD = {
     "SITE_SUBHEADER": "Administración",
+    "SITE_TITLE": "MIDENA SGD",
+    "SITE_HEADER": "MIDENA SGD",
     "COLORS": {
        
         "primary": {
