@@ -27,6 +27,14 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+STORAGES = {
+    "default": {
+        "BACKEND": "django.core.files.storage.FileSystemStorage",
+    },
+    "staticfiles": {
+        "BACKEND": "django.contrib.staticfiles.storage.StaticFilesStorage",
+    },
+}
 
 # Application definition
 
@@ -59,11 +67,27 @@ ROOT_URLCONF = 'sgdSource.urls'
 
 UNFOLD = {
     "SITE_SUBHEADER": "Administración",
+    "COLORS": {
+       
+        "primary": {
+            "50": "240 249 255",
+            "100": "224 242 254",
+            "200": "186 230 253",
+            "300": "125 211 252",
+            "400": "56 189 248",
+            "500": "14 165 233",   # 👈 color principal (azul actual)
+            "600": "2 132 199",
+            "700": "3 105 161",
+            "800": "7 89 133",
+            "900": "12 74 110"
+        },
+        },
+
     "SIDEBAR": {
         "navigation": [
             {
                  "title": "Gestión Documental",
-    "icon": "admin_panel_settings",
+    "icon": "diamond",
     "collapsible": True,
     "permission": lambda request: (
         request.user.has_perm("sgdConocimiento.view_sgdconocimiento")
@@ -88,7 +112,7 @@ UNFOLD = {
             },
             {
                 "title": "Administración",
-                "icon": "admin_panel_settings",
+                "icon": "users",
                 "collapsible": True,
                 "permission": lambda request: (
         request.user.has_perm("auth.view_user")
@@ -113,7 +137,7 @@ UNFOLD = {
             },
             {
                 "title": "Configuración",
-                "icon": "psychology",
+                "icon": "folder",
                 "collapsible": True,
                   "permission": lambda request: (
         request.user.has_perm("sgdCatalogo.view_knowledgedocumenttype")
@@ -144,7 +168,7 @@ UNFOLD = {
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / "templates"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -155,6 +179,8 @@ TEMPLATES = [
         },
     },
 ]
+
+
 
 WSGI_APPLICATION = 'sgdSource.wsgi.application'
 
@@ -211,3 +237,7 @@ STATIC_URL = '/static/'
 
 MEDIA_URL = "/media/"
 MEDIA_ROOT = BASE_DIR / "media"
+#STATIC_ROOT = BASE_DIR / "staticfiles"
+STATICFILES_DIRS = [BASE_DIR / "static"]
+
+#STATIC_ROOT = str(BASE_DIR / "staticfiles")

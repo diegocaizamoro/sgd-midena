@@ -1,0 +1,19 @@
+/*#nav-sidebar-inner {
+    background: #263544 !important;
+}
+
+
+@layer utilities {
+  @media not print {
+    .dark\:text-font-important-dark:where(.dark, .dark *) {
+      color: rgb(227, 230, 236);
+    }
+  }
+}
+
+
+@layer utilities {
+  .text-font-important-light {
+    color: rgb(227, 230, 236);
+  }
+}*/

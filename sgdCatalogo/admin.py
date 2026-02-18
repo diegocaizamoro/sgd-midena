@@ -1,7 +1,6 @@
 from django.contrib import admin
 from unfold.admin import ModelAdmin
 from sgdCatalogo.models import AplicacionPotencial, KnowledgeDocumentType, RedesInvestigacion, Referencia
-
 # Register your models here.
 @admin.register(KnowledgeDocumentType)
 class KnowledgeDocumentTypeAdmin(ModelAdmin):
